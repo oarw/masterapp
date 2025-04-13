@@ -123,8 +123,10 @@
     <string name="data_management">数据管理</string>
     <string name="cloud_sync">云同步</string>
     <string name="about_and_others">关于和其他</string>
+    <string name="backup_to_local">备份到本地</string>
     <string name="backup_local">备份到本地</string>
     <string name="backup_to_local_desc">将应用数据备份到本地存储</string>
+    <string name="restore_from_local">从本地恢复</string>
     <string name="restore_local">从本地恢复</string>
     <string name="restore_from_local_desc">从本地备份文件恢复应用数据</string>
     <string name="webdav_settings_desc">配置WebDAV服务器连接信息</string>
@@ -133,6 +135,8 @@
     <string name="sync_to_webdav_desc">将应用数据同步到WebDAV服务器</string>
     <string name="restore_from_webdav">从WebDAV恢复</string>
     <string name="restore_from_webdav_desc">从WebDAV服务器恢复应用数据</string>
+    <string name="auto_sync">自动同步</string>
     <string name="auto_sync_desc">定期自动同步数据到WebDAV</string>
+    <string name="about">关于</string>
     <string name="about_app">关于学习规划助手</string>
 </resources>
