@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    
+    <!-- 应用程序特定颜色 -->
+    <color name="color_text_primary">#212121</color>
+    <color name="color_text_secondary">#757575</color>
+    <color name="color_background">#FFFFFF</color>
+    <color name="color_overdue">#B71C1C</color>
+    <color name="color_today">#1976D2</color>
+    <color name="color_completed">#4CAF50</color>
+    <color name="color_priority_high">#F44336</color>
+    <color name="color_priority_medium">#FF9800</color>
+    <color name="color_priority_low">#4CAF50</color>
+    
+    <!-- 番茄钟相关颜色 -->
+    <color name="color_work">#F44336</color>
+    <color name="color_break">#4CAF50</color>
+    <color name="color_pause">#FF9800</color>
+    
+    <!-- 图表颜色 -->
+    <color name="color_chart_1">#F44336</color>
+    <color name="color_chart_2">#4CAF50</color>
+    <color name="color_chart_3">#2196F3</color>
+    <color name="color_chart_4">#FF9800</color>
+    <color name="color_chart_5">#9C27B0</color>
+</resources>
