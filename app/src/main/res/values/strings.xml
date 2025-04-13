@@ -117,4 +117,16 @@
     <string name="tap_plus_to_add_task">点击右下角的+按钮添加新任务</string>
     <string name="add_new_task">添加新任务</string>
     <string name="priority_indicator">优先级指示器</string>
+
+    <!-- 设置页面 -->
+    <string name="app_settings">应用设置</string>
+    <string name="data_management">数据管理</string>
+    <string name="cloud_sync">云同步</string>
+    <string name="about_and_others">关于和其他</string>
+    <string name="backup_local">备份到本地</string>
+    <string name="restore_local">从本地恢复</string>
+    <string name="sync_to_webdav">同步到WebDAV</string>
+    <string name="restore_from_webdav">从WebDAV恢复</string>
+    <string name="auto_sync">自动同步</string>
+    <string name="about">关于应用</string>
 </resources>
