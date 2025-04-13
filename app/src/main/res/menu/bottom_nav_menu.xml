@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
-        android:id="@+id/todo_fragment"
-        android:icon="@drawable/ic_todo"
+        android:id="@+id/taskListFragment"
+        android:icon="@drawable/ic_task"
         android:title="@string/todo" />
+
     <item
-        android:id="@+id/calendar_fragment"
+        android:id="@+id/scheduleListFragment"
         android:icon="@drawable/ic_calendar"
         android:title="@string/calendar" />
+
     <item
-        android:id="@+id/pomodoro_fragment"
+        android:id="@+id/pomodoroFragment"
         android:icon="@drawable/ic_timer"
         android:title="@string/pomodoro" />
+
     <item
-        android:id="@+id/statistics_fragment"
+        android:id="@+id/statisticsFragment"
         android:icon="@drawable/ic_statistics"
         android:title="@string/statistics" />
+
     <item
-        android:id="@+id/ai_fragment"
-        android:icon="@drawable/ic_ai"
+        android:id="@+id/aiAssistantFragment"
+        android:icon="@drawable/ic_assistant"
         android:title="@string/ai_assistant" />
+
 </menu>

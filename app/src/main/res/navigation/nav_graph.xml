@@ -3,95 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/todo_fragment">
+    app:startDestination="@id/taskListFragment">
 
     <fragment
-        android:id="@+id/calendar_fragment"
-        android:name="com.masterapp.ui.calendar.CalendarFragment"
-        android:label="@string/calendar"
-        tools:layout="@layout/fragment_calendar">
-        <action
-            android:id="@+id/action_calendar_to_add_schedule"
-            app:destination="@id/add_schedule_fragment" />
-        <action
-            android:id="@+id/action_calendar_to_schedule_detail"
-            app:destination="@id/schedule_detail_fragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/todo_fragment"
-        android:name="com.masterapp.ui.todo.TodoFragment"
+        android:id="@+id/taskListFragment"
+        android:name="com.masterapp.ui.task.TaskListFragment"
         android:label="@string/todo"
-        tools:layout="@layout/fragment_todo">
+        tools:layout="@layout/fragment_task_list">
         <action
-            android:id="@+id/action_todo_to_add_task"
-            app:destination="@id/add_task_fragment" />
-        <action
-            android:id="@+id/action_todo_to_task_detail"
-            app:destination="@id/task_detail_fragment" />
+            android:id="@+id/action_taskList_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/pomodoro_fragment"
-        android:name="com.masterapp.ui.pomodoro.PomodoroFragment"
-        android:label="@string/pomodoro"
-        tools:layout="@layout/fragment_pomodoro" />
-
-    <fragment
-        android:id="@+id/statistics_fragment"
-        android:name="com.masterapp.ui.statistics.StatisticsFragment"
-        android:label="@string/statistics"
-        tools:layout="@layout/fragment_statistics" />
-
-    <fragment
-        android:id="@+id/ai_fragment"
-        android:name="com.masterapp.ui.ai.AiFragment"
-        android:label="@string/ai_assistant"
-        tools:layout="@layout/fragment_ai">
-        <action
-            android:id="@+id/action_ai_to_ai_config"
-            app:destination="@id/ai_config_fragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/add_schedule_fragment"
-        android:name="com.masterapp.ui.calendar.AddScheduleFragment"
-        android:label="@string/add_schedule"
-        tools:layout="@layout/fragment_add_schedule">
-        <argument
-            android:name="scheduleId"
-            android:defaultValue="-1L"
-            app:argType="long" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/schedule_detail_fragment"
-        android:name="com.masterapp.ui.calendar.ScheduleDetailFragment"
-        android:label="@string/schedule_details"
-        tools:layout="@layout/fragment_schedule_detail">
-        <argument
-            android:name="scheduleId"
-            app:argType="long" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/add_task_fragment"
-        android:name="com.masterapp.ui.todo.AddTaskFragment"
-        android:label="@string/add_task"
-        tools:layout="@layout/fragment_add_task">
-        <argument
-            android:name="taskId"
-            android:defaultValue="-1L"
-            app:argType="long" />
-        <argument
-            android:name="parentTaskId"
-            android:defaultValue="-1L"
-            app:argType="long" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/task_detail_fragment"
-        android:name="com.masterapp.ui.todo.TaskDetailFragment"
+        android:id="@+id/taskDetailFragment"
+        android:name="com.masterapp.ui.task.TaskDetailFragment"
         android:label="@string/task_details"
         tools:layout="@layout/fragment_task_detail">
         <argument
@@ -100,9 +26,67 @@
     </fragment>
 
     <fragment
-        android:id="@+id/ai_config_fragment"
-        android:name="com.masterapp.ui.ai.AiConfigFragment"
+        android:id="@+id/scheduleListFragment"
+        android:name="com.masterapp.ui.schedule.ScheduleListFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_schedule_list">
+        <action
+            android:id="@+id/action_scheduleList_to_scheduleDetail"
+            app:destination="@id/scheduleDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scheduleDetailFragment"
+        android:name="com.masterapp.ui.schedule.ScheduleDetailFragment"
+        android:label="@string/schedule_details"
+        tools:layout="@layout/fragment_schedule_detail">
+        <argument
+            android:name="scheduleId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pomodoroFragment"
+        android:name="com.masterapp.ui.pomodoro.PomodoroFragment"
+        android:label="@string/pomodoro"
+        tools:layout="@layout/fragment_pomodoro">
+        <action
+            android:id="@+id/action_pomodoro_to_pomodoroSettings"
+            app:destination="@id/pomodoroSettingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pomodoroSettingsFragment"
+        android:name="com.masterapp.ui.pomodoro.PomodoroSettingsFragment"
+        android:label="@string/pomodoro_settings"
+        tools:layout="@layout/fragment_pomodoro_settings" />
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.masterapp.ui.statistics.StatisticsFragment"
+        android:label="@string/statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/aiAssistantFragment"
+        android:name="com.masterapp.ui.ai.AIAssistantFragment"
+        android:label="@string/ai_assistant"
+        tools:layout="@layout/fragment_ai_assistant">
+        <action
+            android:id="@+id/action_aiAssistant_to_aiSettings"
+            app:destination="@id/aiSettingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aiSettingsFragment"
+        android:name="com.masterapp.ui.ai.AISettingsFragment"
         android:label="@string/ai_configuration"
-        tools:layout="@layout/fragment_ai_config" />
+        tools:layout="@layout/fragment_ai_settings" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.masterapp.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>
