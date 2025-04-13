@@ -25,6 +25,7 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' } // 添加JitPack仓库，用于MPAndroidChart库
+        jcenter() // 添加JCenter仓库，用于sardine-android库
     }
 }
 
