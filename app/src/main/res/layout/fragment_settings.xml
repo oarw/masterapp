@@ -335,7 +335,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@android:drawable/ic_menu_download"
+                    android:src="@drawable/ic_download"
                     android:contentDescription="@null"
                     app:tint="?attr/colorPrimary" />
 
