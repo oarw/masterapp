@@ -79,8 +79,8 @@ dependencies {
     // Chart Library
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     
-    // WebDAV Client
-    implementation 'com.thegrizzlylabs.sardine-android:sardine-android:0.8'
+    // WebDAV Client - OkHttp Implementation
+    implementation 'com.github.lookfirst:sardine:5.10'
     
     // Testing
     testImplementation 'junit:junit:4.13.2'
