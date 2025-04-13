@@ -18,6 +18,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     
+    namespace "com.masterapp"
+    
     buildTypes {
         release {
             minifyEnabled true
