@@ -93,4 +93,21 @@
     <string name="syncing">正在同步…</string>
     <string name="sync_success">同步成功</string>
     <string name="sync_failed">同步失败</string>
+
+    <!-- 任务列表 -->
+    <string name="all_tasks">全部任务</string>
+    <string name="pending">待办</string>
+    <string name="completed">已完成</string>
+    <string name="today">今日</string>
+    <string name="important">重要</string>
+    <string name="search">搜索</string>
+    <string name="sort">排序</string>
+    <string name="sort_by_date">按日期排序</string>
+    <string name="sort_by_priority">按优先级排序</string>
+    <string name="sort_alphabetically">按字母排序</string>
+    <string name="empty_tasks_image_description">没有任务图标</string>
+    <string name="no_tasks_found">没有找到任何任务</string>
+    <string name="tap_plus_to_add_task">点击右下角的+按钮添加新任务</string>
+    <string name="add_new_task">添加新任务</string>
+    <string name="priority_indicator">优先级指示器</string>
 </resources>
