@@ -49,6 +49,13 @@
     <string name="break_time">休息时间</string>
     <string name="pomodoro_settings">番茄钟设置</string>
     <string name="minutes">分钟</string>
+
+    <!-- 番茄钟特定文本 -->
+    <string name="task_selection">选择关联任务</string>
+    <string name="long_break">长休息时间</string>
+    <string name="sessions_before_long_break">长休息前的工作周期</string>
+    <string name="save_settings">保存设置</string>
+    <string name="reset_to_default">恢复默认</string>
     
     <!-- 统计 -->
     <string name="daily">每日</string>
